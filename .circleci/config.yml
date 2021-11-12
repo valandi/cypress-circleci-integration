@@ -17,21 +17,25 @@ jobs:
             name: Install Dependencies
             command:  cd cypress && npm install --save
   run_test_1:
-    - run:
-        name: "Run test 1"
-        command: |
-           npm run test1
+    steps:
+      - run:
+          name: "Run test 1"
+          command: |
+            npm run test1
   run_test_2:
-    - run:
-        name: "Run test 2"
-        command: |
-          npm run test2
+    steps:
+      - run:
+          name: "Run test 2"
+          command: |
+            npm run test2
   run_test_3:
-    - run:
-        name: "Run test 3"
-        command: |
-          npm run test3
+    steps:
+      - run:
+          name: "Run test 3"
+          command: |
+            npm run test3
   get_test_results:
+    steps:
       - store_test_results:
           path: test-results
       - store_artifacts:
