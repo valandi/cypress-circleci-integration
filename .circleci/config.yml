@@ -28,6 +28,10 @@ jobs:
           name: "Run test 3"
           command: |
             npm run test3
+      - store_test_results:
+          path: test-results
+      - store_artifacts:
+          path: test-results
 
   # get_test_results:
   #   steps:
