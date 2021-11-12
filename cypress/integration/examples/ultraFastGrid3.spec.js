@@ -1,5 +1,5 @@
-describe("AppTest", () => {
-    it(`ultraFastTest`, function () {
+describe("AppTest3", () => {
+    it(`ultraFastTest3`, function () {
         // Navigate to the url we want to test
         // ⭐️ Note to see visual bugs, run the test using the above URL for the 1st run.
         // but then change the above URL to https://demo.applitools.com/index_v2.html
@@ -8,8 +8,8 @@ describe("AppTest", () => {
 
         // Call Open on eyes to initialize a test session
         cy.eyesOpen({
-            appName: 'Demo App - Cypress',
-            testName: 'Smoke Test - Cypress',
+            appName: 'Demo App3 - Cypress',
+            testName: 'Smoke Test3 - Cypress',
         })
 
         // check the login page with fluent api, see more info here
