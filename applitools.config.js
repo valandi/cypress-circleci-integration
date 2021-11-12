@@ -14,6 +14,5 @@ module.exports = {
         {deviceName: 'Pixel 2', screenOrientation: 'portrait'}
     ],
     // set batch name to the configuration
-    batchName: 'Demo Batch - Cypress',
     showLogs: true
 }

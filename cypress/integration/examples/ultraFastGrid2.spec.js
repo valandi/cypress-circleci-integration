@@ -10,6 +10,7 @@ describe("AppTest2", () => {
         cy.eyesOpen({
             appName: 'Demo App2- Cypress',
             testName: 'Smoke Test2 - Cypress',
+            batchName: 'CypressCircleCI Batch 2'
         })
 
         // check the login page with fluent api, see more info here
