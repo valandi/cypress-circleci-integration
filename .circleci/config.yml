@@ -36,11 +36,11 @@ jobs:
           path: test-results
       - store_artifacts:
           path: test-results
-  close_batch_command:
-    - run:
-      name: Close batch
-      command: |
-        curl -v -d "" --request DELETE --dump-header - 'https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid?apiKey=$APPLITOOLS_API_KEY'
+  # close_batch_command:
+  #   - run:
+  #     name: Close batch
+  #     command: |
+  #       curl -v -d "" --request DELETE --dump-header - 'https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid?apiKey=$APPLITOOLS_API_KEY'
 workflows:
   build_test:
     jobs:
@@ -48,6 +48,6 @@ workflows:
       - run_test_1
       - run_test_2
       - run_test_3
-      - close_batch_command
+      # - close_batch_command
       - get_test_results
 
