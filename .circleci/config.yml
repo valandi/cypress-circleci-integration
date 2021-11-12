@@ -18,17 +18,17 @@ jobs:
             command:  cd cypress && npm install --save
   run_test_1:
     - run:
-        name: Run Tests
+        name: "Run test 1"
         command: |
            npm run test1
   run_test_2:
     - run:
-        name: Run Tests
+        name: "Run test 2"
         command: |
           npm run test2
   run_test_3:
     - run:
-        name: Run Tests
+        name: "Run test 3"
         command: |
           npm run test3
   get_test_results:
@@ -45,9 +45,9 @@ workflows:
   build_test:
     jobs:
       - setup
-      - run_test_1
-      - run_test_2
-      - run_test_3
+      - run: Run test 1
+      - run: Run test 2
+      - run: Run test 3
       # - close_batch_command
       - get_test_results
 
