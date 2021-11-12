@@ -17,9 +17,9 @@ jobs:
           name: Install Dependencies
           command:  cd cypress && npm install --save
       - run:
-          name: "Run test 1"
+          name: "Run test"
           command: |
-            npm run test1
+            npx cypress run
       # - run:
       #     name: "Run test 2"
       #     command: |
