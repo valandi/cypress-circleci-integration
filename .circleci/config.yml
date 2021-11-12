@@ -20,14 +20,14 @@ jobs:
           name: "Run test 1"
           command: |
             npm run test1
-      - run:
-          name: "Run test 2"
-          command: |
-            npm run test2
-      - run:
-          name: "Run test 3"
-          command: |
-            npm run test3
+      # - run:
+      #     name: "Run test 2"
+      #     command: |
+      #       npm run test2
+      # - run:
+      #     name: "Run test 3"
+      #     command: |
+      #       npm run test3
       - store_test_results:
           path: test-results
       - store_artifacts:
