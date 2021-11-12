@@ -14,12 +14,8 @@ jobs:
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
       - checkout
-      - run:
-          name: Install Dependencies
-          command: npm install
-      - run:
-        command: |
-          export APPLITOOLS_BATCH_ID=`echo $CIRCLE_SHA1`
+      - run: npm install
+      - run: export APPLITOOLS_BATCH_ID=`echo $CIRCLE_SHA1`
       - run: npm test
 
 # Invoke jobs via workflows
