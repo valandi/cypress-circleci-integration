@@ -60,12 +60,12 @@ jobs:
           name: "Run test 3"
           command: |
             npm run test3
-  get_test_results:
-    steps:
-      - store_test_results:
-          path: test-results
-      - store_artifacts:
-          path: test-results
+  # get_test_results:
+  #   steps:
+  #     - store_test_results:
+  #         path: test-results
+  #     - store_artifacts:
+  #         path: test-results
   # close_batch_command:
   #   - run:
   #     name: Close batch
@@ -79,5 +79,5 @@ workflows:
       - run: Run test 2
       - run: Run test 3
       # - close_batch_command
-      - get_test_results
+      # - get_test_results
 
