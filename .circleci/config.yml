@@ -19,15 +19,18 @@ jobs:
   run_test_1:
     - run:
         name: Run Tests
-        command: npm run test1
+        command: |
+           npm run test1
   run_test_2:
     - run:
         name: Run Tests
-        command: npm run test2
+        command: |
+          npm run test2
   run_test_3:
     - run:
         name: Run Tests
-        command: npm run test3
+        command: |
+          npm run test3
   get_test_results:
       - store_test_results:
           path: test-results
@@ -36,7 +39,8 @@ jobs:
   close_batch_command:
     - run:
       name: Close batch
-      command: curl -v -d "" --request DELETE --dump-header - 'https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid?apiKey=$APPLITOOLS_API_KEY'
+      command: |
+        curl -v -d "" --request DELETE --dump-header - 'https://eyesapi.applitools.com/api/sessions/batches/$APPLITOOLS_BATCH_ID/close/bypointerid?apiKey=$APPLITOOLS_API_KEY'
 workflows:
   build_test:
     jobs:
