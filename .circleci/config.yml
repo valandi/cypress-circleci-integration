@@ -19,7 +19,7 @@ jobs:
       - run:
           name: "Run test"
           command: |
-            npx cypress run
+            npm run test1
       # - run:
       #     name: "Run test 2"
       #     command: |
