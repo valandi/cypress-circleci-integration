@@ -44,5 +44,6 @@ workflows:
       - run_test_1
       - run_test_2
       - run_test_3
+      - close_batch_command
       - get_test_results
 
