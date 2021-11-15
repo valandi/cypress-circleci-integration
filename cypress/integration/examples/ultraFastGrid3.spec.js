@@ -10,10 +10,10 @@ describe("AppTest3", () => {
         const randomUUID = Cypress._.random(0,1e6);
         // Call Open on eyes to initialize a test session
         cy.eyesOpen({
-            appName: 'Demo App - Cypress',
-            testName: 'Smoke Test - Cypress',
+            appName: 'Demo App 3- Cypress',
+            testName: 'Smoke Test 3- Cypress',
             batchName: 'CypressCircleCI Batch 3', 
-            batchId: `${randomUUID}`
+            batchId: randomUUID
         })
 
         // check the login page with fluent api, see more info here
