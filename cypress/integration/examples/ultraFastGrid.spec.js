@@ -11,7 +11,7 @@ describe("AppTest", () => {
             appName: 'Demo App - Cypress',
             testName: 'Smoke Test - Cypress',
             batchName: 'CypressCircleCI Batch 1', 
-            batchId: randomUUID
+            batchId: `${randomUUID}`
         })
 
         // check the login page with fluent api, see more info here
