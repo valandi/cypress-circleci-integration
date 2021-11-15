@@ -19,7 +19,7 @@ jobs:
       - run:
           name: "Run tests"
           command: |
-            npm run maybe
+            npm run runAllTests
       - store_test_results:
           path: test-results
       - store_artifacts:
