@@ -4,7 +4,7 @@
   "description": "This contains Applitools Cypress tutorial",
   "main": "index.js",
   "scripts": {
-    "test1": "npx cypress run --spec 'cypress/integration/examples/ultraFastGrid.spec.js'",
+    "test1": "npx cypress run --spec 'cypress/integration/examples/ultraFastGrid.spec.js && npx cypress run --spec 'cypress/integration/examples/ultraFastGrid2.spec.js' && npx cypress run --spec 'cypress/integration/examples/ultraFastGrid3.spec.js'",
     "test2": "npx cypress run --spec 'cypress/integration/examples/ultraFastGrid2.spec.js'",
     "test3": "npx cypress run --spec 'cypress/integration/examples/ultraFastGrid3.spec.js'",
     "test:ci": "DEBUG=cypress:* cypress run --browser chrome --headless --spec 'cypress/integration/examples/ultraFastGrid.spec.js'",
