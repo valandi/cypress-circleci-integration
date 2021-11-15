@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "runAllTests": "npm run test1 && npm run test2 && npm run test3",
+    "maybe": "npx cypress run",
     "test1": "npx cypress run --spec 'cypress/integration/examples/ultraFastGrid.spec.js'",
     "test2": "npx cypress run --spec 'cypress/integration/examples/ultraFastGrid2.spec.js'",
     "test3": "npx cypress run --spec 'cypress/integration/examples/ultraFastGrid3.spec.js'",
