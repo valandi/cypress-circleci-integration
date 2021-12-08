@@ -24,7 +24,9 @@ describe("AppTest3", () => {
             fully: true
         });
 
-        cy.get('#log-in').click()
+        cy.get('#log-in').click();
+
+        cy.contains("Sorry, something went wrong").should('not.exist');
 
         // Check the app page
         cy.eyesCheckWindow({
