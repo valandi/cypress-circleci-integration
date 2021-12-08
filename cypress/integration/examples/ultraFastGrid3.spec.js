@@ -11,9 +11,7 @@ describe("AppTest3", () => {
         // Call Open on eyes to initialize a test session
         cy.eyesOpen({
             appName: 'Demo App 3- Cypress',
-            testName: 'Smoke Test 3- Cypress',
-            batchName: 'CypressCircleCI Batch 3', 
-            batchId: `${randomUUID}`
+            testName: 'Smoke Test 3- Cypress'
         })
 
         // check the login page with fluent api, see more info here
@@ -26,7 +24,7 @@ describe("AppTest3", () => {
 
         cy.get('#log-in').click();
 
-        cy.contains("Sorry, something went wrong").should('not.exist');
+        throw new Error("test fails here");
 
         // Check the app page
         cy.eyesCheckWindow({

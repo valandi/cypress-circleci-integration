@@ -9,9 +9,7 @@ describe("AppTest", () => {
         // Call Open on eyes to initialize a test session
         cy.eyesOpen({
             appName: 'Demo App - Cypress',
-            testName: 'Smoke Test - Cypress',
-            batchName: 'CypressCircleCI Batch 1', 
-            batchId: `${randomUUID}`
+            testName: 'Smoke Test - Cypress'
         })
 
         // check the login page with fluent api, see more info here
