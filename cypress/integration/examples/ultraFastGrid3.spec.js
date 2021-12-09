@@ -24,7 +24,7 @@ describe("AppTest3", () => {
 
         cy.get('#log-in').click();
 
-        throw new Error("test fails here");
+        //throw new Error("test fails here");
 
         // Check the app page
         cy.eyesCheckWindow({
@@ -33,6 +33,8 @@ describe("AppTest3", () => {
             fully: true
         });
 
+        throw new Error("test fails here");
+        
         // Call Close on eyes to let the server know it should display the results
         cy.eyesClose()
     });
