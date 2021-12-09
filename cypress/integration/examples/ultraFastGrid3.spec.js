@@ -33,8 +33,6 @@ describe("AppTest3", () => {
             fully: true
         });
 
-        throw new Error("test fails here");
-        
         // Call Close on eyes to let the server know it should display the results
         cy.eyesClose()
     });
