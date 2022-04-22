@@ -24,8 +24,6 @@ describe("AppTest3", () => {
 
         cy.get('#log-in').click();
 
-        throw new Error("test fails here");
-
         // Check the app page
         cy.eyesCheckWindow({
             tag: "App Window",
