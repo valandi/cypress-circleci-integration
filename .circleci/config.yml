@@ -21,7 +21,7 @@ jobs:
       - run:
           command: |
             export APPLITOOLS_BRANCH_NAME="applitools/cypress-ci/$CIRCLE_BRANCH"
-            curl -L -d '' -X POST "https:/eyes.applitools.com/api/externals/github/push?apiKey=$APPLITOOLS_API_KEY&CommitSha=$CIRCLE_SHA1"
+            curl -L -d '' -X POST "https:/eyes.applitools.com/api/externals/github/push?apiKey=$APPLITOOLS_API_KEY&CommitSha=$CIRCLE_SHA1&BranchName=$APPLITOOLS_BRANCH_NAME"
       - run:
           name: "Run tests"
           command: |
