@@ -20,7 +20,7 @@ jobs:
           command:  cd cypress && npm install --save
       - run:
           command: |
-            curl -L -d '' -X POST "https:/eyes.applitools.com/api/externals/github/push?apiKey=$APPLITOOLS_API_KEY&CommitSha=$CIRCLE_SHA1
+            curl -L -d '' -X POST "https:/eyes.applitools.com/api/externals/github/push?apiKey=$APPLITOOLS_API_KEY&CommitSha=$CIRCLE_SHA1"
       - run:
           name: "Run tests"
           command: |
