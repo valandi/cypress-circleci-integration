@@ -9,5 +9,5 @@ module.exports = {
     ],
     // set batch name to the configuration
     showLogs: true,
-    failCypressOnDiff: false
+    failCypressOnDiff: true
 }
