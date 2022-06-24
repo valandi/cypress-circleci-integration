@@ -24,6 +24,7 @@ describe("AppTest3", () => {
 
         cy.get('#log-in').click();
 
+
         // Check the app page
         cy.eyesCheckWindow({
             tag: "App Window",

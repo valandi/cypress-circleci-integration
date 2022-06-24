@@ -20,7 +20,9 @@ describe("AppTest", () => {
             fully: true
         });
 
-        cy.get('#log-in').click()
+        cy.get('#log-in').click();
+
+        
 
         // Check the app page
         cy.eyesCheckWindow({
@@ -29,7 +31,11 @@ describe("AppTest", () => {
             fully: true
         });
 
+        //throw new Error("test fails here");
+        
         // Call Close on eyes to let the server know it should display the results
-        cy.eyesClose()
+        cy.eyesClose();
+
+        throw new error("Throwing an error after eyes closes");
     });
 });
